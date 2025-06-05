@@ -7,7 +7,7 @@ on:
 jobs:
   tests:
     name: Tests 
-    run-on: ubuntu-latest 
+    runs-on: ubuntu-latest 
 
     steps:
       - name: Check out code
@@ -19,5 +19,8 @@ jobs:
           go-version: "1.23.0"
 
 
-      - name: Force Failure 
-        run: (exit 1)
+      - name: Version Check  
+        run: (go version)
+
+      - name: exiting 
+        run: (exit 0)
