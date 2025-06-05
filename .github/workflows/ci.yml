@@ -21,3 +21,6 @@ jobs:
 
       - name: Version Check  
         run: (go version)
+
+      - name: exiting 
+        run: (exit 0)
