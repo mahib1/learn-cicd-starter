@@ -1,4 +1,4 @@
-name: ci
+name: cy
 
 on:
   pull_request:
